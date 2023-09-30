@@ -1,3 +1,5 @@
+import React from "react"
+import { Profile } from "./Profile/Profile"
 import user from "../info/user.json"
 
 export const App = ({ user }) => {
