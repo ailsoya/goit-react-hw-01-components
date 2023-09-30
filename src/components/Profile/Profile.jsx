@@ -1,31 +1,32 @@
 import React from "react"
+import styles from "./Profile.module.css"
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
-        <div class="profile">
-            <div class="description">
+        <div className={styles.Profile}>
+            <div className={styles.Description}>
                 <img
                     src={avatar}
                     alt="User avatar"
-                    class="avatar"
+                    className={styles.Avatar}
                 />
-                <p class="name">{username}</p>
-                <p class="tag">@{tag}</p>
-                <p class="location">{location}</p>
+                <p className={styles.Username}>{username}</p>
+                <p className={styles.desc}>@{tag}</p>
+                <p className={styles.desc}>{location}</p>
             </div>
             
-            <ul class="stats">
-                <li>
-                    <span class="label">Followers</span>
-                    <span class="quantity">{stats.followers}</span>
+            <ul className={styles.Stats}>
+                <li className={styles.Stat}>
+                    <span className={styles.Label}>Followers</span>
+                    <span className={styles.Quantity}>{stats.followers}</span>
                 </li>
-                <li>
-                    <span class="label">Views</span>
-                    <span class="quantity">{stats.views}</span>
+                <li className={styles.Stat}>
+                    <span className={styles.Label}>Views</span>
+                    <span className={styles.Quantity}>{stats.views}</span>
                 </li>
-                <li>
-                    <span class="label">Likes</span>
-                    <span class="quantity">{stats.likes}</span>
+                <li className={styles.Stat}>
+                    <span className={styles.Label}>Likes</span>
+                    <span className={styles.Quantity}>{stats.likes}</span>
                 </li>
             </ul>
         </div>
