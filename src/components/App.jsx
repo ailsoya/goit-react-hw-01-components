@@ -1,6 +1,6 @@
 import user from "../info/user.json"
 
-export const App = () => {
+export const App = ({ user }) => {
   return (
     <div>
       <Profile
