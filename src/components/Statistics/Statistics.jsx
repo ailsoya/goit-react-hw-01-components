@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./Staristics.module.css"
+import styles from "./Statistics.module.css"
 
 export const Statistics = ({ users }) => {
     return (
