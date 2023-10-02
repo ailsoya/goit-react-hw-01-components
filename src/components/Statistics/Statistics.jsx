@@ -1,16 +1,18 @@
 import React from "react"
 import styles from "./Statistics.module.css"
 
-export const Statistics = ({ users }) => {
+export const Statistics = ({ stats }) => {
     return (
         <section className={styles.Statistics}>
             <h2 className={styles.Title}>Upload stats</h2>
             
             <ul className={styles.StatList}>
-                {users.map((user) => (
-                    <li className={styles.Item}>
-                        <span className={styles.Label}>{user.label}</span>
-                        <span className={styles.Percentage}>{user.percentage}%</span>
+                {stats.map((stat) => (
+                    <li className={styles.Item} key={stat.id}>
+                        {stat.label && (
+                            <span className={styles.Label}>{stat.label}</span>
+                        )}
+                        <span className={styles.Percentage}>{stat.percentage}%</span>
                     </li>
                 ))}
             </ul>

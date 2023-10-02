@@ -2,7 +2,7 @@
     width: 600px;
     text-align: center;
     border-collapse: collapse;
-    margin-left: 10px;
+    margin: 0 0 30px 10px;
 }
 
 .TransactionHistory td, .TransactionHistory th {
