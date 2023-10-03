@@ -7,12 +7,12 @@ export const Statistics = ({ stats }) => {
             <h2 className={styles.Title}>Upload stats</h2>
             
             <ul className={styles.StatList}>
-                {stats.map((stat) => (
-                    <li className={styles.Item} key={stat.id}>
-                        {stat.label && (
-                            <span className={styles.Label}>{stat.label}</span>
+                {stats.map((state) => (
+                    <li className={styles.Item} key={state.id}>
+                        {state.label && (
+                            <span className={styles.Label}>{state.label}</span>
                         )}
-                        <span className={styles.Percentage}>{stat.percentage}%</span>
+                        <span className={styles.Percentage}>{state.percentage}%</span>
                     </li>
                 ))}
             </ul>
